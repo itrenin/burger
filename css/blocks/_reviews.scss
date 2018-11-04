@@ -13,6 +13,7 @@
   filter: grayscale(100%);  
   position: relative;
 
+  
   &:hover {
     .reviews__hover {
       opacity: 1;
@@ -29,4 +30,24 @@
   background: rgba(#454545, .7);
   opacity: 0;
   transition: opacity .3s;
+
+}
+.reviews__text{
+  @include ubuntu(light);
+  font-size: 14px;
+  color: white;
+  line-height: 30px;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.reviews__text h2{
+  @include gagalin();
+  text-transform: uppercase;
+
+}
+.reviews__text p{
+  margin-bottom: 20px;
 }

@@ -848,6 +848,27 @@ footer {
   transition: opacity .3s;
 }
 
+.reviews__text {
+  font-family: 'Ubuntu', Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: white;
+  line-height: 30px;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.reviews__text h2 {
+  font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.reviews__text p {
+  margin-bottom: 20px;
+}
+
 .order {
   background: url("../img/bg/order.jpg") center center no-repeat;
   background-size: cover;
