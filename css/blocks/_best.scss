@@ -1,0 +1,36 @@
+.best {
+  background: url('../../img/section-best/section-two-bg.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.best__list {
+  display: flex;
+}
+
+.best__item {
+  margin-right: 20px;
+  flex: 1;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.best__icon{
+  text-align: center;
+  height: 95px;
+  margin-bottom: 33px;
+}
+.best__title{
+  @include lifehack();
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.best__text{
+  @include ubuntu(light);
+  font-size: 15px;
+  color: $black;
+  text-align: center;
+  line-height: 25px;
+}
+

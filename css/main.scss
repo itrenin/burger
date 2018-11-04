@@ -1,0 +1,24 @@
+//colors
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;
+
+//normalize
+@import "_misc/_normalize.scss";
+
+// setups
+@import "_misc/_mixins";
+@import "_misc/_fonts";
+@import "_misc/_layout";
+
+
+//common
+@import "blocks/common/_btn.scss";
+
+// blocks
+@import "blocks/_hero.scss";
+@import "blocks/_best.scss";
+@import "blocks/_team.scss";
+@import "blocks/_reviews.scss";
+@import "blocks/_order.scss";
