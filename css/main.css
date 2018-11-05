@@ -586,7 +586,7 @@ footer {
 
 .arrow-scroll {
   height: 95px;
-  background: url(../../img/icons/arrow-scroll.svg) center no-repeat;
+  background: url(../img/icons/arrow-scroll.svg) center no-repeat;
 }
 
 .btn {
@@ -602,7 +602,7 @@ footer {
 }
 
 .hero {
-  background: url("../../img/section-main/img-bg.jpg") center center no-repeat;
+  background: url("../img/section-main/img-bg.jpg") center center no-repeat;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -708,7 +708,7 @@ footer {
 }
 
 .best {
-  background: url("../../img/section-best/section-two-bg.jpg") center center no-repeat;
+  background: url("../img/section-best/section-two-bg.jpg") center center no-repeat;
   background-size: cover;
 }
 
