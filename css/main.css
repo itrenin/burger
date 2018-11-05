@@ -550,6 +550,7 @@ footer {
 .section {
   height: 100vh;
   min-height: 650px;
+  position: relative;
 }
 
 .section_centered {
@@ -582,6 +583,11 @@ footer {
 
 .arrow-down {
   display: block;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  height: 95px;
+  width: 40px;
 }
 
 .arrow-scroll {
