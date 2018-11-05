@@ -580,6 +580,15 @@ footer {
   text-align: center;
 }
 
+.arrow-down {
+  display: block;
+}
+
+.arrow-scroll {
+  height: 95px;
+  background: url(../../img/icons/arrow-scroll.svg) center no-repeat;
+}
+
 .btn {
   padding: 10px 15px;
   background: #e35028;
