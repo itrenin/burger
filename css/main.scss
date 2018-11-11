@@ -3,6 +3,7 @@ $orange: #e45028;
 $yellow: #f9b43b;
 $black: #2f3234;
 $red: #e35028;
+$white: #ffffff;
 
 //brakepoints
 $tablets: 768px;
@@ -23,8 +24,14 @@ $phones: 480px;
 @import "blocks/common/_btn.scss";
 
 // blocks
-@import "blocks/_hero.scss";
-@import "blocks/_best.scss";
-@import "blocks/_team.scss";
-@import "blocks/_reviews.scss";
-@import "blocks/_order.scss";
+@import "blocks/_hero";
+@import "blocks/_best";
+@import "blocks/_team";
+@import "blocks/_team-acco";
+@import "blocks/_menu";
+@import "blocks/_menu-acco";
+@import "blocks/_reviews";
+@import "blocks/_order";
+@import "blocks/_map";
+@import "blocks/_socials";
+@import "blocks/_footer";
