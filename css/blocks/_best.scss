@@ -1,36 +1,83 @@
 .best {
   background: url('../img/section-best/section-two-bg.jpg') center center no-repeat;
   background-size: cover;
+  @include tablets{
+    background: url('../img/section-best/section-two-bg_tab.jpg') center center no-repeat;
+  background-size: cover;
+  }
+  @include phones{
+    background: url('../img/section-best/section-two-bg_phone.jpg') center center no-repeat;
+  background-size: cover;
+  }
 }
 
 .best__list {
   display: flex;
+  
+  @include phones{
+    flex-direction: column;
+  }
 }
 
 .best__item {
-  margin-right: 20px;
+  width: 28%;
+  margin-right: 2%;
   flex: 1;
+  
+  
+  @include phones{
+    width: 95%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: row;
+  }
 
   &:last-child {
     margin-right: 0;
+    @include phones{
+      margin-bottom: 0;
+    }
   }
 }
 .best__icon{
   text-align: center;
-  height: 95px;
-  margin-bottom: 33px;
+  height: rem(95px);
+  width: rem(95px);
+  margin: auto;
+  margin-bottom: rem(33px);
+  
+  @include phones{
+    max-height: rem(95px);
+    max-width: rem(95px);
+    min-height: rem(95px);
+    min-width: rem(95px);
+    margin-bottom: 0;
+    margin-right: rem(10px);
+  }
+}
+.best__icon-pic{
+  width: 100%;
+  height: 100%;
+  
 }
 .best__title{
   @include lifehack();
-  font-size: 25px;
+  font-size: rem(25px);
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: rem(0px);
+  
+  @include phones{
+    text-align: left;
+  }
 }
 .best__text{
   @include ubuntu(light);
-  font-size: 15px;
+  font-size: rem(15px);
   color: $black;
   text-align: center;
-  line-height: 25px;
+  line-height: rem(25px);
+  @include phones{
+    text-align: left;
+  }
 }
 
