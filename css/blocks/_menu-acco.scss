@@ -56,6 +56,8 @@
 
 .menu-acco__content--active{
 	width: 550px;	
+	//@if 550px <      { width: 550px; }
+	//@else {width: 100%;}
 }
 
 

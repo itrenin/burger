@@ -32,3 +32,6 @@
 	background-position: center center;
 	background-repeat: no-repeat;
 }
+@mixin box-size(){
+	width: 100% - 0 px;
+}
