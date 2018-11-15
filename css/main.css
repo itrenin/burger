@@ -566,18 +566,18 @@ footer {
           justify-content: center;
 }
 
-.section-title {
+.section .title {
   font-size: 72px;
   font-family: 'Gagalin-Regular', Helvetica, sans-serif;
   color: #f9b43b;
   margin-bottom: 40px;
 }
 
-.section-title_color_black {
+.section .title__color-black {
   color: #2f3234;
 }
 
-.section-title_position_center {
+.section .title__position-center {
   text-align: center;
 }
 
@@ -607,6 +607,47 @@ footer {
   display: inline-block;
 }
 
+.fixed-menu {
+  position: fixed;
+  top: 80px;
+  right: 45px;
+}
+
+.fixed-menu__item {
+  margin-bottom: 10px;
+}
+
+.fixed-menu__item.active .fixed-menu__link {
+  border-color: #fff;
+}
+
+.fixed-menu__link {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: relative;
+  display: block;
+  border: 1px solid transparent;
+}
+
+.fixed-menu__link:hover {
+  border-color: #fff;
+}
+
+.fixed-menu__link:before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .hero {
   background: url("../img/section-main/img-bg.jpg") center center no-repeat;
   background-size: cover;
@@ -626,6 +667,15 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.logo__img {
+  width: 100%;
+}
+
+.logo {
+  display: block;
+  width: 100px;
 }
 
 .header__btns {
@@ -741,14 +791,14 @@ footer {
   margin-bottom: 33px;
 }
 
-.best__title {
+.best__content > h4 {
   font-family: 'Lifehack-Medium';
   font-size: 25px;
   text-align: center;
   margin-bottom: 30px;
 }
 
-.best__text {
+.best__content > p {
   font-family: 'Ubuntu', Helvetica, sans-serif;
   font-weight: 300;
   font-size: 15px;

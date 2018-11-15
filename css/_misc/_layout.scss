@@ -79,27 +79,29 @@ footer {
     flex-direction: column;
     justify-content: center;
   }
-}
-
-.section-title {
-  font-size: 72px;
-  @include gagalin();
-  color: $yellow;
-  margin-bottom: 40px;
-
-  &_color {
-    &_black {
-      color: $black;
+  .title {
+    font-size: 72px;
+    @include gagalin();
+    color: $yellow;
+    margin-bottom: 40px;
+  
+    &__color {
+      &-black {
+        color: $black;
+      }
+  
     }
-
+  
+    &__position {
+      &-center {
+        text-align: center;
+      }
+    }
   }
 
-  &_position {
-    &_center {
-      text-align: center;
-    }
-  }
 }
+
+
 .arrow-down{
   display: block;
   position: absolute;
