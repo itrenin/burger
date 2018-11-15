@@ -671,6 +671,15 @@ footer {
           align-items: center;
 }
 
+.logo__img {
+  width: 100%;
+}
+
+.logo {
+  display: block;
+  width: 100px;
+}
+
 .header__btns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -948,7 +957,7 @@ footer {
   height: 100%;
 }
 
-.best__title {
+.best__content > h4 {
   font-family: 'Lifehack-Medium';
   font-size: 1.5625rem;
   text-align: center;
@@ -956,12 +965,12 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .best__title {
+  .best__content > h4 {
     text-align: left;
   }
 }
 
-.best__text {
+.best__content > p {
   font-family: 'Ubuntu', Helvetica, sans-serif;
   font-weight: 300;
   font-size: 0.9375rem;
@@ -971,7 +980,7 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .best__text {
+  .best__content > p {
     text-align: left;
   }
 }

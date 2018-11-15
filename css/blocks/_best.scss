@@ -60,7 +60,8 @@
   height: 100%;
   
 }
-.best__title{
+
+.best__content>h4{
   @include lifehack();
   font-size: rem(25px);
   text-align: center;
@@ -70,7 +71,7 @@
     text-align: left;
   }
 }
-.best__text{
+.best__content>p{
   @include ubuntu(light);
   font-size: rem(15px);
   color: $black;
