@@ -2,6 +2,12 @@
   position: fixed;
   top: 80px;
   right: 45px;
+  @include tablets{
+    display: none;
+  }
+  @include phones{
+    display: none;
+  }
 }
 
 .fixed-menu__item {

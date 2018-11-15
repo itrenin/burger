@@ -656,6 +656,18 @@ footer {
   right: 45px;
 }
 
+@media (max-width: 768px) {
+  .fixed-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .fixed-menu {
+    display: none;
+  }
+}
+
 .fixed-menu__item {
   margin-bottom: 0.625rem;
 }
