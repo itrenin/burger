@@ -94,33 +94,34 @@ footer {
     flex-direction: column;
     justify-content: center;
   }
+  .title {
+    font-size: rem(72px);
+    @include gagalin();
+    color: $yellow;
+    margin-bottom: rem(40px);
+  
+    &__color {
+      &-black {
+        color: $black;
+      }
+  
+    }
+    &__color {
+      &-white {
+        color: $white;
+      }
+    }
+  
+    &__position {
+      &-center {
+        text-align: center;
+      }
+    }
+  
+  }
 }
 
-.section-title {
-  font-size: rem(72px);
-  @include gagalin();
-  color: $yellow;
-  margin-bottom: rem(40px);
 
-  &_color {
-    &_black {
-      color: $black;
-    }
-
-  }
-  &_color {
-    &_white {
-      color: $white;
-    }
-  }
-
-  &_position {
-    &_center {
-      text-align: center;
-    }
-  }
-
-}
 
 
 .arrow-down{
