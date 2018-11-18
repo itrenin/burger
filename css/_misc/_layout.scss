@@ -110,8 +110,13 @@ footer {
       &-white {
         color: $white;
       }
+      
     }
-  
+    &__color {
+      &-red {
+        color: $red;
+      }
+    }
     &__position {
       &-center {
         text-align: center;

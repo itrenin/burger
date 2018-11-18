@@ -12,9 +12,28 @@
 	height: 100%;
 	justify-content: flex-end;
 
-	&.active {
+	&--active {
+		width: 60%;
 		.menu-acco__trigger-text {
 			color: $yellow;
+		}
+		.menu-acco__content {
+			width: 100%;
+		}
+		.menu-acco__text{
+			display: block;
+		}
+		
+		@include tablets{
+			width: 100%;
+		}
+		@include phones{
+			position: absolute;
+			width: 100%;
+			z-index: 100;
+			.btn__close{
+				display: block;
+			}
 		}
 	}
 }
@@ -54,22 +73,14 @@
 	overflow: hidden;
 }
 
-.menu-acco__content--active{
-	width: 550px;	
-	//@if 550px <      { width: 550px; }
-	//@else {width: 100%;}
-}
-
 
 .menu-acco__text {
 	@include ubuntu(light);
 	font-size: rem(14px);
 	color: #fff;
-	padding: rem(60px) rem(30px);
+	padding: rem(60px) rem(40px);
 	width: 100%;
   line-height: 1.8;
   display: none;
-}
-.menu-acco__text--active{
-	display: block;
+  position: relative;
 }
