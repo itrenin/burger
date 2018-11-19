@@ -4,7 +4,7 @@
 	background: -webkit-linear-gradient(top, #f9b43b 0%, #eb8c38 40%, #eb8c38 60%, #eb8c38 60%, #f9b43b 100%);
 	background: linear-gradient(to bottom, #f9b43b 0%, #eb8c38 40%, #eb8c38 60%, #eb8c38 60%, #f9b43b 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9b43b', endColorstr='#f9b43b',GradientType=0 );
-	position: relative;
+	//position: relative;
 	text-align: left;
 	display: flex;
 	align-items: center;
@@ -34,9 +34,12 @@
 	}
 }
 .burger__list {
-    width: 100%;
-    height: 100%;
+    
     display: flex;
+    position: relative;
+    will-change: right;
+    width: fit-content;
+    transition: right .3s;
 }
 .burger__item{
     min-width: 100%;
@@ -47,6 +50,37 @@
 .burger__content{
     display: flex;
     justify-content: center;
+    @include tablets{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .burger__pic{
+            width: 100%;
+            height: 50%;
+        }
+        .burger__text{
+            width: 100%;
+            height: 50%;
+        }
+        .burger__pic-img img{
+            width: 50%;
+        }
+
+    }
+    @include phones{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .burger__pic{
+            width: 100%;
+        }
+        .burger__text{
+            width: 100%;
+        }
+        .burger__pic-img img{
+            width: 50%;
+        }
+    }
 }
 .burger__pic{
     width: 50%;
@@ -55,9 +89,8 @@
     align-content: center;
     justify-content: center;
 }
-.burger__pic-img img{
+.burger__pic-img, img{
     width: 100%;
-    margin: auto;
 }
 .burger__title{
     line-height: rem(65px);
@@ -75,4 +108,82 @@
     color: $red;
     font-size: rem(30px);
     margin-right: rem(30px);
+}
+.burger-arrow__pic{
+    display: block;
+    height: 15px;
+    width: 30px;
+}
+.arrow__left{
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left:0;
+    
+    .burger-arrow__pic{
+        transform: rotate(90deg);
+    }
+}
+.arrow__right{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    //right: rem(-20px);
+    .burger-arrow__pic{
+        transform: rotate(-90deg);
+    }
+}
+
+.kcal{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 90px;
+    opacity: .5;   
+    @include tablets{
+        left: 85%;
+        bottom: 82%;
+    }
+    @include phones{
+        left: 85%;
+        bottom: 82%;
+    }
+}
+.kcal__dim{
+    background: url(../../img/icons/kkal.svg) no-repeat ;
+    background-size: contain;
+	background-position: center;
+    width: rem(60px);
+    height: rem(60px);
+    text-align: center;
+    padding-top: 45%;
+}
+
+.comparision{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 90px;
+    background-color: $yellow;
+    border-radius: rem(5px);
+    padding-top: rem(10px);
+    cursor: pointer;
+
+}
+.comparision__active{
+    background-color: $red;
+}
+.comporison__pic{
+    height: 55%;
+    width: 100%;
+}
+.slider__icon-title{
+    @include gagalin;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+
 }

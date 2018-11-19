@@ -20,6 +20,7 @@
 .header__btns {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   margin-left: auto;
   
 }
@@ -33,7 +34,7 @@
   @include phones{
     display: block;
   }
-  margin-right: rem(40px);
+  margin-right: rem(8px);
 }
 .hamburger-menu__icon-pic{
   height: 100%;
