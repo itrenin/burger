@@ -1,5 +1,5 @@
 .hero {
-  background: url('../../img/section-main/img-bg.jpg') center center no-repeat;
+  background: url('../img/section-main/img-bg.jpg') center center no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -10,28 +10,68 @@
   display: flex;
   align-items: center;
 }
-
+.logo__img{
+  width: 100%;
+}
+.logo{
+  display: block;
+  width: rem(100px);
+}
 .header__btns {
   display: flex;
   align-items: center;
   margin-left: auto;
+  
+}
+.hamburger-menu{
+  width: rem(40px);
+  height: rem(40px);
+  display: none;
+  @include tablets{
+    display: block;
+  }
+  @include phones{
+    display: block;
+  }
+  margin-right: rem(40px);
+}
+.hamburger-menu__icon-pic{
+  height: 100%;
+  width: 100%;
 }
 
 .hero__container {
   flex: 1;
 }
-
 .hero__content {
   flex: .8;
   display: flex;
   align-items: center;
+  @include tablets{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  @include phones{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+   
+  }
 }
 
 .hero__text {
   color: #fff;
 }
 .nav{
-  margin-right: 15px;
+  margin-right: rem(15px);
+  @include tablets{
+    display: none;
+  }
+  @include phones{
+    display: none;
+  }
 }
 .nav__list {
   display: flex;
@@ -55,24 +95,45 @@
   &:after {
     content: "";
     display: block;
-    width: 4px;
-    height: 4px;
+    width: rem(4px);
+    height: rem(4px);
     border-radius: 50%;
     background: #fff;   
-    margin: 0 16px;
+    margin: 0 rem(16px);
   }
 }
 
 .hero__pic {
   width: 50%;
+  
+  @include tablets{
+    width: 100%;
+  }
+  @include phones{
+    width: 100%;
+  }
 }
-
+.hero__pic-img, img{
+  width: 100%;
+  @include tablets{
+    width: 50%;
+  }
+  @include phones{
+    width: 50%;
+  }
+}
 .hero__text {
   width: 50%;
+  @include tablets{
+    width: 100%;
+  }
+  @include phones{
+    width: 100%;
+  }
 }
 .hero__desc{
   @include lifehack();
-  font-size: 65px;
-  line-height: 55px;
+  font-size: rem(65px);
+  line-height: rem(55px);
   text-transform: lowercase;
 }
