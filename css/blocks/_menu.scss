@@ -17,6 +17,7 @@ top: 0;
 background-color: $black;
 opacity: .95;
 transition: 0.5s;
+z-index: 1000;
 }
 .burger-menu-content--active{
 	

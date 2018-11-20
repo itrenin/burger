@@ -812,6 +812,7 @@ footer {
   right: 1.25rem;
   position: fixed;
   display: none;
+  z-index: 1000;
   margin-right: 0.5rem;
 }
 
@@ -1680,6 +1681,7 @@ footer {
   opacity: .95;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  z-index: 1000;
 }
 
 .burger-menu-content--active {
