@@ -36,10 +36,18 @@
 .burger__list {
     
     display: flex;
+    width: 100%;
     position: relative;
     will-change: right;
     width: fit-content;
     transition: right .3s;
+    @include tablets {
+		width: 100%;
+		margin: 0 auto;
+	}
+	@include phones {
+		width: 100%;
+	}
 }
 .burger__item{
     min-width: 100%;
@@ -48,6 +56,8 @@
     
 }
 .burger__content{
+    padding-top: rem(100px);
+    padding-bottom: rem(100px);
     display: flex;
     justify-content: center;
     @include tablets{
@@ -119,7 +129,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left:0;
+    left:rem(-20px);
     
     .burger-arrow__pic{
         transform: rotate(90deg);
@@ -128,7 +138,7 @@
 .arrow__right{
     position: absolute;
     top: 50%;
-    right: 0;
+    right: rem(-20px);;
     //right: rem(-20px);
     .burger-arrow__pic{
         transform: rotate(-90deg);
@@ -143,12 +153,18 @@
     height: 90px;
     opacity: .5;   
     @include tablets{
-        left: 85%;
-        bottom: 82%;
+        //left: 85%;
+        //bottom: 82%;
+        bottom: initial;
+        left: initial;
+        top: 0;
+        right: 0;
     }
     @include phones{
-        left: 85%;
-        bottom: 82%;
+        bottom: initial;
+        left: initial;
+        top: 0;
+        right: 0;
     }
 }
 .kcal__dim{

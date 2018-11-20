@@ -60,11 +60,7 @@
                 </ul>
               </nav>
               <a href="#" class="btn">Заказать</a>
-              <a href="#" class="hamburger-menu">
-                <svg class="hamburger-menu__icon-pic" style="fill:#fff">
-                  <use xlink:href="./img/icons/sprite.svg#hamb-menu"></use>
-                </svg>
-              </a>
+              
             </div>
 
           </header>
@@ -143,7 +139,7 @@
       <section class="section burgers section_centered">
         <div class="container">
           <div class="burger">
-              <ul class="burger__list" id="burger__list">
+              <ul class="burger__list" id="burger__list" style="right:0px">
                   <li class="burger__item">
                     <div class="burger__content">
                       <div class="burger__pic">
@@ -520,7 +516,29 @@
       </li>
     </ul>
 
+    <nav class="burger-menu-content"><!--burger-menu-content--active-->
+        
+      <ul class="burger-menu-content__list">          
+        <li class="burger-menu-content__item"><a href="#" class="burger-menu-content__itemLink">О нас</a></li>
+        <li class="burger-menu-content__item"><a href="#" class="burger-menu-content__itemLink">Бургеры</a></li>
+        <li class="burger-menu-content__item"><a href="#" class="burger-menu-content__itemLink">Команда</a></li>
+        <li class="burger-menu-content__item"><a href="#" class="burger-menu-content__itemLink">Меню</a></li>
+        <li class="burger-menu-content__item"><a href="#" class="burger-menu-content__itemLink">Отзывы</a></li>
+        <li class="burger-menu-content__item"><a href="#" class="burger-menu-content__itemLink">Контакты</a></li>
+        
+      </ul>
+    </nav>
+        <a href="#" class="hamburger-menu" >
+          <div class="hamburger-menu__icon-pic" id="hamburger-menu-button">
+
+          </div>
+          <!--<svg class="hamburger-menu__icon-pic" style="fill:#fff; display: block;" id="hamburger-menu-button">
+            <use xlink:href="./img/icons/sprite.svg#hamb-menu"></use>
+          </svg> -->
+          
+        </a>
 </div>
 <script src="./js/slider.js"></script>
+<script src="./js/toggle-menu.js"></script>
 </body>
 </html>

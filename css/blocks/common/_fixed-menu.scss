@@ -45,3 +45,33 @@
     transform: translate(-50%, -50%);
   }
 }
+.hamburger-menu{
+  width: rem(40px);
+  height: rem(40px);
+  top: rem(20px);
+  right: rem(20px);
+  position: fixed;
+  display: none;
+  @include tablets{
+    display: block;
+  }
+  @include phones{
+    display: block;
+  }
+  margin-right: rem(8px);
+}
+.hamburger-menu__icon-pic{
+  content: ' ';
+  height: 100%;
+  width: 100%;
+  background-image: url('../img/icons/burger-menu.svg');
+  background-repeat: no-repeat;
+  fill: #fff;
+  animation: rotate .5s 0s;
+  
+}
+.hamburger-menu__icon-pic-close{
+  background-image: url('../img/icons/close.svg');
+  background-repeat: no-repeat;
+  fill: #fff;
+}

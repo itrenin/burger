@@ -24,22 +24,6 @@
   margin-left: auto;
   
 }
-.hamburger-menu{
-  width: rem(40px);
-  height: rem(40px);
-  display: none;
-  @include tablets{
-    display: block;
-  }
-  @include phones{
-    display: block;
-  }
-  margin-right: rem(8px);
-}
-.hamburger-menu__icon-pic{
-  height: 100%;
-  width: 100%;
-}
 
 .hero__container {
   flex: 1;
