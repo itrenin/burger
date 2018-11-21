@@ -12,7 +12,15 @@
   background-repeat: no-repeat;
   filter: grayscale(100%);  
   position: relative;
-
+  @include tablets{
+    width: 50%;
+    height: 25%;
+  }
+  @include phones{
+    width: 50%;
+    height: 25%;
+  }
+  
   &:hover {
     .reviews__hover {
       opacity: 1;
@@ -29,4 +37,50 @@
   background: rgba(#454545, .7);
   opacity: 0;
   transition: opacity .3s;
+
+}
+.reviews__text{
+  @include ubuntu(light);
+  font-size: rem(14px);
+  color: white;
+  line-height: rem(30px);
+  padding-top: rem(50px);
+  padding-left: rem(20px);
+  padding-right: rem(20px);
+  padding-bottom: rem(20px);
+  
+  @include tablets{
+    text-align: center;
+    line-height: rem(20px);
+    padding-top: rem(20px);
+    padding-left: rem(10px);
+    padding-right: rem(10px);
+    padding-bottom: rem(10px);
+  }
+  @include phones{
+    text-align: center;
+  }
+}
+
+.reviews__text h2{
+  @include gagalin();
+  text-transform: uppercase;
+  @include tablets{
+    margin-bottom: rem(10px);
+  }
+  @include phones{
+    margin-bottom: rem(45px);
+  }
+}
+.reviews__text p{
+  margin-bottom: rem(20px);
+  @include tablets{
+    margin-bottom: rem(10px);
+  }
+  @include phones{
+    display: none;
+  }
+}
+.reviews__text a{
+  margin: auto;
 }

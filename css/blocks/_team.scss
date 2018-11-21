@@ -1,60 +1,49 @@
 .team {
-  background: url('../img/bg/team.jpg') center center no-repeat;
+	background: url("../img/section-team/bg-team.jpg") 50% no-repeat;
+  background-repeat: no-repeat;
+  background-position: top;
   background-size: cover;
-  position: relative;
+	position: relative;
+
+	.section__title {
+		margin-bottom: 12%;
+	}
 }
 
-.team__container {
-  position: absolute;
-  top: 0;
+.team__content {
+    text-align: left;
+  
+  @include tablets{
+    text-align: center;
+  }
+  @include phones{
+    text-align: center;
+  }
+}
+
+.team__section {
+	position: absolute;
+	right: 0;
+	top: 0;
   bottom: 0;
-  right: 0;
   width: 50%;
-  background: rgba(#2f3234, .93);
-  padding-left: 70px;
+	background: rgba(#2f3234, .93);
+  padding: 5% 2% 0 7%;
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
-}
 
-.team-acco__trigger {
-  color: #fff;
-  display: flex;
-  align-items: center;
-
-  &:before {
-    content: "";
-    height: 0;
-    width: 0;
-    border: 9px solid transparent;
-    border-top-color: $yellow;
-    border-bottom-width: 0px;
-
+  @include tablets {
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    padding: 0;
   }
-}
-
-.team-acco__content {
-  display: flex;
-}
-
-.team-acco__text {
-  color: #fff;
-}
-
-.team-acco__content {
-  display: none;
-}
-
-.team-acco__item_active {
-  .team-acco__trigger {
-    color: $yellow;
-
-    &:before {
-      transform: rotate(-180deg);
-    }
-  }
-
-  .team-acco__content {
-    display: block;
+  @include phones {
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    padding: 0;
   }
 }

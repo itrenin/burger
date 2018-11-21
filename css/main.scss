@@ -1,12 +1,19 @@
 //colors
 $orange: #e45028;
-$yellow: #f9b43b;
+$yellow: #f08c33;
 $black: #2f3234;
 $red: #e35028;
+$white: #ffffff;
+
+//brakepoints
+$tablets: 768px;
+$phones: 480px;
 
 //normalize
 @import "_misc/_normalize.scss";
 
+//media
+@import "_misc/media";
 // setups
 @import "_misc/_mixins";
 @import "_misc/_fonts";
@@ -15,10 +22,18 @@ $red: #e35028;
 
 //common
 @import "blocks/common/_btn.scss";
+@import "blocks/common/_fixed-menu";
 
 // blocks
-@import "blocks/_hero.scss";
-@import "blocks/_best.scss";
-@import "blocks/_team.scss";
-@import "blocks/_reviews.scss";
-@import "blocks/_order.scss";
+@import "blocks/_hero";
+@import "blocks/_best";
+@import "blocks/_burger";
+@import "blocks/_team";
+@import "blocks/_team-acco";
+@import "blocks/_menu";
+@import "blocks/_menu-acco";
+@import "blocks/_reviews";
+@import "blocks/_order";
+@import "blocks/_map";
+@import "blocks/_socials";
+@import "blocks/_footer";
