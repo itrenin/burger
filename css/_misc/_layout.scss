@@ -72,30 +72,46 @@ footer {
 .section {
   height: 100vh;
   min-height: 650px;
+  position: relative;
 
   &_centered {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+  .title {
+    font-size: 72px;
+    @include gagalin();
+    color: $yellow;
+    margin-bottom: 40px;
+  
+    &__color {
+      &-black {
+        color: $black;
+      }
+  
+    }
+  
+    &__position {
+      &-center {
+        text-align: center;
+      }
+    }
+  }
+
 }
 
-.section-title {
-  font-size: 72px;
-  @include gagalin();
-  color: $yellow;
-  margin-bottom: 40px;
 
-  &_color {
-    &_black {
-      color: $black;
-    }
-
-  }
-
-  &_position {
-    &_center {
-      text-align: center;
-    }
-  }
+.arrow-down{
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  height: 95px;
+  width: 40px;
+}
+.arrow-scroll{
+  
+  height: 95px;
+  background:url(../img/icons/arrow-scroll.svg) center no-repeat;
 }

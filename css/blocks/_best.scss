@@ -1,5 +1,5 @@
 .best {
-  background: url('../../img/section-best/section-two-bg.jpg') center center no-repeat;
+  background: url('../img/section-best/section-two-bg.jpg') center center no-repeat;
   background-size: cover;
 }
 
@@ -20,13 +20,14 @@
   height: 95px;
   margin-bottom: 33px;
 }
-.best__title{
+
+.best__content>h4{
   @include lifehack();
   font-size: 25px;
   text-align: center;
   margin-bottom: 30px;
 }
-.best__text{
+.best__content>p{
   @include ubuntu(light);
   font-size: 15px;
   color: $black;
