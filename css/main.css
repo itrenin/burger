@@ -1405,7 +1405,7 @@ footer {
   width: 3.75rem;
   height: 3.75rem;
   text-align: center;
-  padding-top: 50%;
+  padding-top: 45%;
 }
 
 .comparision {
@@ -1433,6 +1433,7 @@ footer {
   font-family: 'Gagalin-Regular', Helvetica, sans-serif;
   text-align: center;
   text-transform: uppercase;
+  line-height: 1.875rem;
   color: #ffffff;
 }
 
