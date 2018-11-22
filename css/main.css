@@ -1399,7 +1399,7 @@ footer {
 }
 
 .kcal__dim {
-  background: url(../../img/icons/kkal.svg) no-repeat;
+  background: url(../img/icons/kkal.svg) no-repeat;
   background-size: contain;
   background-position: center;
   width: 3.75rem;
@@ -2010,7 +2010,7 @@ footer {
 
 .map {
   background: url("../img/section-map/mar-img.png") center center no-repeat;
-  background-size: cover;
+  background-size: auto;
 }
 
 .socials {
