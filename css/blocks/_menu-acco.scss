@@ -14,6 +14,7 @@
 
 	&--active {
 		width: 60%;
+		
 		.menu-acco__trigger-text {
 			color: $yellow;
 		}
@@ -22,6 +23,7 @@
 		}
 		.menu-acco__text{
 			display: block;
+			
 		}
 		
 		@include tablets{
@@ -71,6 +73,7 @@
 	background: rgba(#2f3234, .93);
 	width: 0;
 	overflow: hidden;
+	transition: width .6s;
 }
 
 
