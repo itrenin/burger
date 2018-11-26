@@ -594,6 +594,10 @@ body {
   overflow: hidden;
 }
 
+.wrapper--blocked {
+  height: 100vh;
+}
+
 h1,
 h2,
 h3,
