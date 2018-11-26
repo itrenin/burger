@@ -62,24 +62,28 @@
   }
 }
 
-.reviews__text h2{
-  @include gagalin();
-  text-transform: uppercase;
-  @include tablets{
-    margin-bottom: rem(10px);
+.reviews__text--inner {
+  p {
+    display: block;
+    margin-bottom: rem(20px);
+    @include tablets{
+     margin-bottom: rem(10px);
+    }
+    @include phones{
+     display: none;
+    }
   }
-  @include phones{
-    margin-bottom: rem(45px);
+  h2{
+    @include gagalin();
+    text-transform: uppercase;
+    @include tablets{
+      margin-bottom: rem(10px);
+    }
+    @include phones{
+      margin-bottom: rem(45px);
+    }
   }
-}
-.reviews__text p{
-  margin-bottom: rem(20px);
-  @include tablets{
-    margin-bottom: rem(10px);
-  }
-  @include phones{
-    display: none;
-  }
+  
 }
 .reviews__text a{
   margin: auto;

@@ -1,0 +1,45 @@
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background: $black;
+    opacity: .9;
+    overflow: hidden;
+    display: none;
+}
+.overlay__popup{
+    
+    position: relative;
+    display: block;
+    background: $white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: rem(5px);
+    width: rem(460px);
+    @include phones(){
+        width: 95%;
+    }
+}
+.overlay__text{
+    padding: rem(20px) rem(30px);
+    font-size: rem(12px);
+    h2 {
+        @include gagalin();
+        text-transform: uppercase;
+        
+    }
+
+}
+.overlay__close{
+    position: absolute;
+    content: '';
+    width: rem(40px);
+    height: rem(40px);
+    top: rem(20px);
+    right: rem(20px);
+    background-image: url('../img/icons/close-red.svg');
+    background-repeat: no-repeat;
+}
