@@ -592,10 +592,12 @@ body {
   position: relative;
   min-height: 100%;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 .wrapper--blocked {
-  height: 100vh;
+  position: fixed;
+  overflow: hidden;
 }
 
 h1,
@@ -2228,7 +2230,6 @@ footer {
 }
 
 .map {
-  background: url("../img/section-map/mar-img.png") center center no-repeat;
   background-size: auto;
 }
 

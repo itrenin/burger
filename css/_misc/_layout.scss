@@ -43,9 +43,12 @@ body {
   position: relative;
   min-height: 100%;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 .wrapper--blocked{
-  height: 100vh;
+  //height: 100vh;
+  position: fixed;
+  overflow: hidden;
 }
 
 
