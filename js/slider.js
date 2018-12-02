@@ -1,17 +1,3 @@
-//const list = document.querySelector(".burger__item");
-//const computed = getComputedStyle(list);
-//let width = list.offSetWith;
- //console.log(parseInt(computed.width));
-
- //получение ширины блока в px
- //const items = document.querySelector(".burger__item");
- //const computed = getComputedStyle(items);
-
- //const itemsNumber = document.querySelectorAll(".burger__item");
- //const computed = getComputedStyle(items);
-//console.log(itemsNumber.length);
-
-
 const left = document.querySelector("#burger__left");
 const right = document.querySelector("#burger__right");
 const items = document.querySelector("#burger__list");

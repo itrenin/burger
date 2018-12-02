@@ -9,97 +9,7 @@
   </title>
   <link rel="stylesheet" href="./css/main.css">
   <script src="https://api-maps.yandex.ru/2.1/?apikey=1401606c-7bbe-40b3-9224-b8e00829670b&lang=ru_RU" type="text/javascript"></script>
-  <script type="text/javascript">
-    // Функция ymaps.ready() будет вызвана, когда
-    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-    ymaps.ready(init);
-    function init(){ 
-        // Создание карты.    
-        var myMap = new ymaps.Map("map", {
-            // Координаты центра карты.
-            // Порядок по умолчанию: «широта, долгота».
-            // Чтобы не определять координаты центра карты вручную,
-            // воспользуйтесь инструментом Определение координат.
-            center: [59.929800, 30.358685],
-            // Уровень масштабирования. Допустимые значения:
-            // от 0 (весь мир) до 19.
-            zoom: 12
-        });
-         // Создаём макет содержимого.
-         MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-        ),
-
-        burgerOne = new ymaps.Placemark([59.972432, 30.310877], {
-            hintContent: 'Mr.Burger',
-            balloonContent: 'Mr.Burger #1'
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#image',
-            // Своё изображение иконки метки.
-            iconImageHref: './img/icons/map-marker.svg',
-            // Размеры метки.
-            iconImageSize: [47, 60],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-23, -60]
-        }),
-
-          burgerTwo = new ymaps.Placemark([59.945347, 30.377846], {
-            hintContent: 'Mr.Burger',
-            balloonContent: 'Mr.Burger #2'
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#image',
-            // Своё изображение иконки метки.
-            iconImageHref: './img/icons/map-marker.svg',
-            // Размеры метки.
-            iconImageSize: [47, 60],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-23, -60]
-        }),
-        burgerThree = new ymaps.Placemark([59.917993, 30.494404], {
-            hintContent: 'Mr.Burger',
-            balloonContent: 'Mr.Burger #3'
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#image',
-            // Своё изображение иконки метки.
-            iconImageHref: './img/icons/map-marker.svg',
-            // Размеры метки.
-            iconImageSize: [47, 60],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-23, -60]
-        }),
-        burgerFour = new ymaps.Placemark([59.890657, 30.313498], {
-            hintContent: 'Mr.Burger',
-            balloonContent: 'Mr.Burger #3'
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#image',
-            // Своё изображение иконки метки.
-            iconImageHref: './img/icons/map-marker.svg',
-            // Размеры метки.
-            iconImageSize: [47, 60],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-23, -60]
-        }),
-        
-        myMap.geoObjects
-        .add(burgerOne)
-        .add(burgerTwo)
-        .add(burgerThree)
-        .add(burgerFour);
-    }
-</script>
-
+  <script src="./js/map.js"></script>
 </head>
 
 <body>
@@ -560,7 +470,38 @@
             </div>
           </div>
       </section>
-      
+      <section class="section player">
+
+        <div class="container">
+            <div class="title title__position-center title__color-black">Как мы работаем</div>
+            
+            
+            <div class="player__wrap">
+                <div class="player__splash">
+                  <div class="player__playbutton-big"></div>
+                </div>
+                <div id="yt-player"></div>
+                
+            </div>
+            <div class="player__controls">
+              <div class="player__playback">
+                <button class="player__play"></button>
+              </div>
+              <div class="player__progress">
+                <div class="player__progress-point"></div>
+                <div class="player__progress-bar" id="video__progress"></div>
+              </div>
+              <div class="player__volume">
+                <div class="player__volume-icon"></div>
+                <div class="player__progress--volume">
+                    <div class="player__progress-point--volume"></div>
+                    <div class="player__progress-bar" id="volume__level"></div>
+                  </div>
+              </div>
+            </div>
+        </div>
+
+      </section>
       <section class="section order">
           <div class="container">
             <div class="title title__position-center">Закажите доставку</div>
@@ -739,5 +680,8 @@
 <script src="./js/overlay.js"></script>
 <script src="./js/js-min-3-3-1.js"></script>
 <script src="./js/main.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="./js/player.js"></script>
+<script src="./js/onepagescroll.js"></script>
 </body>
 </html>
