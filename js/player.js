@@ -2,23 +2,45 @@
 	  //    after the API code downloads.
 	  let player;
 	  function onYouTubeIframeAPIReady() {
-		player = new YT.Player('yt-player', {
-		  height: '405',
-		  width: '660',
-		  videoId: 'M7lc1UVf-VE',
-		  playerVars:{
-			  controls: 0,
-			  disablekb: 0,
-			  modestbranding: 0,
-			  rel: 0,
-			  autoplay: 0,
-			  showinfo: 0,
-		  },
-		  events: {
-			'onReady': onPlayerReady,
-			'onStateChange': onPlayerStateChange
-		  }
-		});
+			if (!isMobile()){
+			player = new YT.Player('yt-player', {
+				height: '405',
+				width: '660',
+				videoId: 'M7lc1UVf-VE',
+				playerVars:{
+					controls: 0,
+					disablekb: 0,
+					modestbranding: 0,
+					rel: 0,
+					autoplay: 0,
+					showinfo: 0,
+				},
+				events: {
+				'onReady': onPlayerReady,
+				'onStateChange': onPlayerStateChange
+				}
+			});
+		}
+		else{
+			player = new YT.Player('yt-player', {
+				height: '282',
+				width: '460',
+				videoId: 'M7lc1UVf-VE',
+				playerVars:{
+					controls: 0,
+					disablekb: 0,
+					modestbranding: 0,
+					rel: 0,
+					autoplay: 0,
+					showinfo: 0,
+				},
+				events: {
+				'onReady': onPlayerReady,
+				'onStateChange': onPlayerStateChange
+				}
+			});
+
+		}
 	  }
 	  function onPlayerStateChange(event){
 		switch (event.data){
