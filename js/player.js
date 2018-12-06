@@ -109,8 +109,27 @@ $('#video__progress').on('click', e =>{
 	player.seekTo(newPlayerTime);
 });
 
+$('#volume__level').on('click', e =>{
+	const bar = $(e.currentTarget);
+	const newButtonPosition = e.pageX - bar.offset().left;
+	//console.log (newButtonPosition);
+	const clickedPercent = (newButtonPosition / bar.width()) * 100;
+	console.log (clickedPercent);
+	//const newPlayerVolume = (player.getVolume() / 100) * clickedPercent;
+	const newPlayerVolume = clickedPercent;
+	changeButtonPositionVolume(clickedPercent);
+
+	player.setVolume(newPlayerVolume);
+});
+
 function changeButtonPosition(percent){
 	$('.player__progress-point').css({
+		left: `${percent}%`,
+	});
+
+}
+function changeButtonPositionVolume(percent){
+	$('.player__progress-point--volume').css({
 		left: `${percent}%`,
 	});
 
