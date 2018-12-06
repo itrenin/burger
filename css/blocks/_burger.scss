@@ -187,15 +187,59 @@
     border-radius: rem(5px);
     padding-top: rem(10px);
     cursor: pointer;
+    &:hover{
+        background-color: $red;
+        .comparision__items{
+            display: block;
+        }
+    }
 
-}
-.comparision__active{
-    background-color: $red;
 }
 .comporison__pic{
     height: 55%;
     width: 100%;
 }
+.comparision__items{
+    position: absolute;
+    top: 0;
+    left: rem(91px);
+    background: $white;
+    opacity: .7;
+    border-radius: 5px;
+    padding: rem(20px);
+    width: rem(270px);
+    display: none;
+    transition: .3s;
+    &:hover{
+        display: block;
+        .comparision{
+            background-color: $red;
+        }
+    }
+}
+.comparision__item{
+    display: flex;
+    height: rem(40px);
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: rem(15px);
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.comparision__item--icon{
+    width: rem(45px);
+}
+.comparision__item--desc{
+    font-weight: 500;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.comparision__item--weight{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 .slider__icon-title{
     @include gagalin;
     text-align: center;
